@@ -1,0 +1,11 @@
+import { PageHero } from "@/components/page-hero";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+export const metadata = { title: "About" };
+export default function About() {
+  return <><PageHero eyebrow="About AeroEquity" title="Aviation deserves a deeper look." intro="AeroEquity Partners is a planned venture focused on understanding the commercial airline industry and the public companies that operate within it."/>
+    <section className="section"><div className="container two-col"><div><span className="eyebrow">OUR PURPOSE</span><h2>Connecting industry insight with <em>equity perspective.</em></h2></div><div className="prose"><p>Commercial aviation is one of the world's most complex industries. It connects economies and communities, but it is also capital-intensive, highly competitive and exposed to changing economic conditions.</p><p>Our concept is built around disciplined research, curiosity and a long-term perspective. We aim to make complex industry developments easier to understand without oversimplifying the risks.</p><p>AeroEquity Partners is currently a developing business concept. It should not be understood as an established fund, broker, licensed adviser or manager of third-party assets.</p></div></div></section>
+    <section className="image-quote"><div className="container"><span className="eyebrow light">OUR NORTH STAR</span><blockquote>“Understand the airline before forming a view on the share.”</blockquote><p>A research-first mindset</p></div></section>
+    <section className="section"><div className="container"><div className="section-heading"><div><span className="eyebrow">OUR PRINCIPLES</span><h2>How we aim<br/>to operate.</h2></div></div><div className="principle-grid"><div><b>01</b><h3>Clarity</h3><p>Communicate in plain language and distinguish evidence from opinion.</p></div><div><b>02</b><h3>Curiosity</h3><p>Keep learning about the operational and financial realities of aviation.</p></div><div><b>03</b><h3>Integrity</h3><p>Be transparent about limitations, uncertainty, conflicts and risk.</p></div></div><Link className="arrow-link" href="/contact">Get in touch <ArrowUpRight size={17}/></Link></div></section>
+  </>;
+}
